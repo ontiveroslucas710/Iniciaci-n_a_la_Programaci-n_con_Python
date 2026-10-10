@@ -1,14 +1,15 @@
-#productos = []
 
-# Lista de productos con 5 elementos (5 cajones)
-productos = [
-    ["Mouse Gamer", "Periféricos", 45],     # Índice 0 (Cajón 0)
-    ["Teclado Mecánico", "Periféricos", 120], # Índice 1 (Cajón 1)
-    ["Monitor 24 pulgadas", "Pantallas", 250],# Índice 2 (Cajón 2)
-    ["Auriculares Bluetooth", "Audio", 85],   # Índice 3 (Cajón 3)
-    ["Memoria RAM 16GB", "Componentes", 60]  # Índice 4 (Cajón 4)
-]
 
+# # Lista de productos como ejemplo
+# productos = [
+#     ["Mouse Gamer", "Periféricos", 45],     
+#     ["Teclado Mecánico", "Periféricos", 120], 
+#     ["Monitor 24 pulgadas", "Pantallas", 250],
+#     ["Auriculares Bluetooth", "Audio", 85],   
+#     ["Memoria RAM 16GB", "Componentes", 60] 
+# ]
+
+productos = []
 
 while True:
     print("\n")
@@ -95,7 +96,7 @@ while True:
             while True:
                 id_elminar = input("Numero de producto a elminar: ").strip()
 
-                while not id_elminar.isdigit(): # verifico que eldato ingresado sean numeros
+                while not id_elminar.isdigit(): # verifico que el dato ingresado sean numeros
                     print("Error: ingresa un numero")
                     id_elminar = input("Numero de producto a elminar: ").strip()
 
@@ -112,7 +113,7 @@ while True:
         
 
     elif opcion == "5":
-        print("\n¡Gracias por usar nuestro sistema!")
+        print("\n¡Gracias por usar nuestro sistema!\n")
         break
 
     else:
